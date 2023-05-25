@@ -18,35 +18,10 @@
   * Evaluated  the model with ```balanced_accuracy_score()```, ```confusion_matrix()``` and ```classification_report_imbalanced()```
 
 
-
-Split the Data into Training and Testing Sets
-separate the data into training and testing data. 
-
-Split the features and target data into training_features, testing_features, training_targets, and testing_targets datasets by using the train_test_split function.
-
-Model and Fit the Data to a Logistic Regression
-Declare a LogisticRegression model.
-
-Fit the training data to the model, and save the model.
-
-Predict the Testing Labels
-Make predictions about fraud by using the testing dataset, and save those predictions.
-Assess model's performamce by the followig model’s performance: metrics:
-
-Accuracy
-
-Precision
-
-Recall
-
-F1 score
-
-
-
 * Below are the methods used in this analysis:
- * Used  logistic regression assesses  multiple variables, such as an applicant's income, loan amount, debt_to_incom ratio and number of accounts, to arrive at one of two answers: approve or deny the loan application.
+  * Used  logistic regression assesses  multiple variables, such as an applicant's income, loan amount, debt_to_income ratio and number of accounts, to arrive at one of two answers: approve or deny the loan application.
 
- * Oversampled  the data for the minority class `1`  with  RandomOverSampler( ) to enhance the performance of the model; 
+  * Oversampled  the data for the minority class `1`  with  RandomOverSampler( ) to enhance the performance of the model; 
 
 ## Results
 
