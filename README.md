@@ -5,16 +5,17 @@
 
 * The data had two groups of loans: `0` (healthy loan)  class  and  `1` (high-risk loan). The former eventually performed well, and the latter eventually defaulted. The goal is to use classification to correctly predict which of these two categories a loan application belongs to.
 *  The original dataset  used to build the logistic regression model (Model 1)  had  total number of 77,536 loans. Out of these 75.036 loans performed well  and 2,500 loans  became high-resk loans.   Resampled dataset had 56,271 loans in each class and this was used to build  Model 2 . 
-* Describe the stages of the machine learning process you went through as part of this analysis.
+* Below are the stages of the machine learning process completed as part of this analysis:
 
-* Split the Data into Training and Testing Sets using  train_test_split ()
-Created a model with `LogisticRegression()'.
+  * Split the Data into Training and Testing Sets using  ```train_test_split()```
 
-Trained  the model with 'model.fit()'.
+  * Created a model with ```LogisticRegression()```.
 
-Made  predictions with 'model.predict()'.
+  * Trained  the model with ```model.fit()```.
 
-Evaluated  the model with 'balanced_accuracy_score()', confusion_matrix() and classification_report_imbalanced()
+  * Made predictions with ```model.predict()```.
+
+  * Evaluated  the model with ```balanced_accuracy_score()```, ```confusion_matrix()``` and ```classification_report_imbalanced()```
 
 
 
@@ -42,26 +43,28 @@ F1 score
 
 
 
-*  Used  logistic regression assesses  multiple variables, such as an applicant's income, loan amount, debt_to_incom ratio and number of accounts, to arrive at one of two answers: approve or deny the loan application.
-* Oversampled  the data for the minority class `1`  with  RandomOverSampler( ) to enhance the performance of the model; 
+* Below are the methods used in this analysis:
+ * Used  logistic regression assesses  multiple variables, such as an applicant's income, loan amount, debt_to_incom ratio and number of accounts, to arrive at one of two answers: approve or deny the loan application.
+
+ * Oversampled  the data for the minority class `1`  with  RandomOverSampler( ) to enhance the performance of the model; 
 
 ## Results
 
 * Machine Learning Model 1:
-  * Description of Model 1 
-   Accuracy  score 0.95,  meaning that the model can detect 95% of  true positives and true negatives
-  Precision  score for `0` (healthy loan)  class was 1.00  and  for `1` (high-risk loan) class was 0.85, t meaning that was  model is  detecting  85% of the loans that were actually going to default
+  * Accuracy  score 0.95,  meaning that the model can detect 95% of  true positives and true negatives
 
-  Recall scores score for `0` (healthy loan)  class was 0.99  and  for `1` (high-risk loan) class was 0.91,  meaning that the model  correctly clasified 91%  of the truly high risk loans.
+  * Precision  score for `0` (healthy loan)  class was 1.00  and  for `1` (high-risk loan) class was 0.85,  meaning that  model is  detecting  85% of the loans that were actually going to default
+
+  * Recall scores score for `0` (healthy loan)  class was 0.99  and  for `1` (high-risk loan) class was 0.91,  meaning that the model  correctly clasified 91%  of the truly high risk loans.
 
 
 
 * Machine Learning Model 2:
-  * Description of Model 2 
+  * Accuracy  score 0.99,;
 
-  Accuracy  score 0.99,;
-  Precision  score for `0` (healthy loan)  class was 1.00  and  for `1` (high-risk loan) class was 0.84
-  Recall scores score for `0` (healthy loan)  class was 0.99  and  for `1` (high-risk loan) class was 0.99,
+  * Precision  score for `0` (healthy loan)  class was 1.00  and  for `1` (high-risk loan) class was 0.84
+
+  * Recall scores score for `0` (healthy loan)  class was 0.99  and  for `1` (high-risk loan) class was 0.99,
 
 ## Summary
 
