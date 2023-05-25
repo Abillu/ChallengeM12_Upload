@@ -53,5 +53,5 @@ In terms of the recall, however, the `1` (high-risk loan) class metric using res
 
 All in, the model using resampled data was much better at detecting borrowers who are likely to default than  the model generated using the original, imbalanced  data. 
 
-In this analysis  where the company's priority is  to build a less risky loan book, model 2 is recommended because it has better recall score  for  the '1` (high-risk loan) class than model 1 as it is correctly claassying 99% of the truly high risk loans.
+In this analysis  where the company's priority is  to build a less risky loan book, model 2 is recommended because it has better recall score  for  the '1` (high-risk loan) class than model 1 as it is correctly classfying 99% of the truly high risk loans.
 
